@@ -25,7 +25,7 @@ pipeline {
 
         stage('Install Playwright Browsers') {
             steps {
-                sh 'npx playwright install --with-deps'
+                sh 'npx playwright install'
             }
         }
 
