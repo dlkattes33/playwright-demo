@@ -1,16 +1,12 @@
 pipeline {
-    agent any
-
-    tools {
-        nodejs 'Node20'   // Updated to use your new Node version
-    }
-
-    environment {
-        CI = 'true'
+    agent {
+        docker {
+            image 'mcr.microsoft.com/playwright:v1.43.0-jammy'
+            args '-u root'
+        }
     }
 
     stages {
-
         stage('Checkout') {
             steps {
                 checkout scm
@@ -23,12 +19,6 @@ pipeline {
             }
         }
 
-        stage('Install Playwright Browsers') {
-            steps {
-                sh 'npx playwright install'
-            }
-        }
-
         stage('Run Tests') {
             steps {
                 sh 'npx playwright test'
@@ -36,7 +26,6 @@ pipeline {
             post {
                 always {
                     junit 'test-results/results.xml'
-                    archiveArtifacts artifacts: 'test-results/html/**', fingerprint: true
                     archiveArtifacts artifacts: 'test-results/**', fingerprint: true
                 }
             }
