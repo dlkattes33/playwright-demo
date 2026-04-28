@@ -24,7 +24,7 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['junit', { outputFile: 'test-results/results.xml' }],
-    ['html', { outputFolder: 'playwright-report', open: 'never' }]
+    ['html', { outputFolder: 'playwright-html', open: 'never' }]
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -54,7 +54,7 @@ export default defineConfig({
       use: { ...devices['Desktop Safari'] },
     },
     */
-   
+
     /* Test against mobile viewports. */
     // {
     //   name: 'Mobile Chrome',
