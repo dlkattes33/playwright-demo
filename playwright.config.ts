@@ -48,12 +48,13 @@ export default defineConfig({
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
     },
-    /*
+    /* Disable Webkit for CI for now - DK 
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
     },
-    //
+    */
+   
     /* Test against mobile viewports. */
     // {
     //   name: 'Mobile Chrome',
