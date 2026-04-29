@@ -11,7 +11,7 @@ class LoginPage {
   }
 
   async goto() {
-    await this.page.goto('https://example.com/login');
+    await this.page.goto('file:///var/jenkins_home/workspace/playwright-demo/static/login.html');
   }
 
   async login(username, password) {
