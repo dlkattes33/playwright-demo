@@ -9,27 +9,22 @@ It includes:
 - Playwright Test Runner UI support
 - Trace viewer and screenshot capture
 
-## Running Tests
+## 🧪 Running Tests
 
 Run all tests:
 Playwright Demo — UI Automation Project
 This project demonstrates modern UI automation using Playwright Test.
 It includes cross‑browser testing, trace capture, screenshots, and CI/CD integration with Jenkins.
 
-🚀 Features
-Playwright Test Runner
+## 🚀 Features
+- Playwright Test Runner
+- Chromium, Firefox, WebKit support
+- Page Object Model (POM) structure
+- HTML reports + JUnit XML
+- Trace viewer + screenshot capture
+- Jenkins pipeline automation
 
-Chromium, Firefox, WebKit support
-
-Page Object Model (POM) structure
-
-HTML reports + JUnit XML
-
-Trace viewer + screenshot capture
-
-Jenkins pipeline automation
-
-📁 Project Structure
+## 📁 Project Structure
 Code
 playwright-demo/
 │
@@ -41,7 +36,8 @@ playwright-demo/
 ├── package.json
 ├── Jenkinsfile
 └── test-results/
-🧪 Running Tests Locally
+
+## 🧪 Running Tests Locally
 Install dependencies:
 
 Code
@@ -58,7 +54,8 @@ View HTML report:
 
 Code
 npx playwright show-report
-🔧 Jenkins Pipeline
+
+## 🔧 Jenkins Pipeline
 The Jenkinsfile performs:
 
 SCM checkout
