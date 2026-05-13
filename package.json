@@ -1,7 +1,7 @@
 {
   "name": "playwright-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project demonstrates UI automation using Playwright Test.  \r It includes:",
   "main": "playwright.config.js",
   "directories": {
     "test": "tests"
@@ -14,5 +14,18 @@
   "devDependencies": {
     "@playwright/test": "^1.59.1",
     "@types/node": "^25.6.0"
-  }
+  },
+  "dependencies": {
+    "playwright": "^1.59.1",
+    "playwright-core": "^1.59.1",
+    "undici-types": "^7.19.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlkattes33/playwright-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dlkattes33/playwright-demo/issues"
+  },
+  "homepage": "https://github.com/dlkattes33/playwright-demo#readme"
 }
