@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1>Demo Home Page</h1>
+    <form>
+      <input id="username" type="text" />
+      <input id="password" type="password" />
+      <button type="submit" id="loginBtn">Login</button>
+      <div class="error-message" style="display:none;">Invalid credentials</div>
+    </form>
+
+    <script>
+      document.querySelector("form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        document.querySelector(".error-message").style.display = "block";
+      });
+    </script>
   </body>
 </html>
