@@ -1,0 +1,6 @@
+# Tell GitHub to ignore HTML files when detecting language
+*.html linguist-detectable=false
+
+# Force TypeScript and JavaScript to count
+*.ts linguist-detectable=true
+*.js linguist-detectable=true
