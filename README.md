@@ -1,8 +1,8 @@
-⭐ Playwright Automation Framework
+## ⭐ Playwright Automation Framework
 A modular, scalable UI + API automation framework built with Playwright Test.
 Designed to demonstrate real‑world automation architecture, CI/CD integration, and best practices for modern SDET workflows.
 
-🚀 Features
+## 🚀 Features
 Cross‑browser execution (Chromium, Firefox, WebKit)
 
 Page Object Model (POM) structure
@@ -19,7 +19,7 @@ Jenkins pipeline support
 
 Configurable test environments
 
-📁 Project Structure
+## 📁 Project Structure
 Code
 playwright-demo/
 │
@@ -35,7 +35,7 @@ playwright-demo/
 ├── Jenkinsfile          # CI pipeline
 ├── package.json
 └── README.md
-🧪 Running Tests Locally
+## 🧪 Running Tests Locally
 Install dependencies:
 
 Code
@@ -56,7 +56,7 @@ View the HTML report:
 
 Code
 npx playwright show-report
-🔧 Jenkins Pipeline Overview
+## 🔧 Jenkins Pipeline Overview
 The included Jenkinsfile performs:
 
 SCM checkout
@@ -77,7 +77,7 @@ test-results/*.xml
 
 This pipeline is optimized for parallel execution and CI‑friendly reporting.
 
-🧱 Design Principles
+## 🧱 Design Principles
 Modularity: POM + fixtures keep tests clean and maintainable
 
 Reusability: Shared utilities for selectors, API clients, and environment config
@@ -88,7 +88,7 @@ CI‑Ready: Zero‑config Jenkins integration
 
 Scalability: Supports parallel runs and multi‑browser execution
 
-📌 Tech Stack
+## 📌 Tech Stack
 Playwright Test (TypeScript)
 
 Node.js
@@ -97,7 +97,7 @@ Jenkins
 
 HTML Reporter / JUnit XML
 
-📄 Future Enhancements
+## 📄 Future Enhancements
 Add API‑only test suite
 
 Add environment‑based config switching
