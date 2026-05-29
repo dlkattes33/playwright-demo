@@ -1,6 +1,13 @@
 # Tell GitHub to ignore HTML files when detecting language
 *.html linguist-detectable=false
 
+playwright-report/* linguist-vendored
+static/* linguist-vendored
+*.html linguist-vendored
+*.css linguist-vendored
+*.svg linguist-vendored
+*.png linguist-vendored
+
 # Force TypeScript and JavaScript to count
 *.ts linguist-detectable=true
 *.js linguist-detectable=true
