@@ -1,75 +1,107 @@
-# Playwright Demo Automation Project
+⭐ Playwright Automation Framework
+A modular, scalable UI + API automation framework built with Playwright Test.
+Designed to demonstrate real‑world automation architecture, CI/CD integration, and best practices for modern SDET workflows.
 
-This project demonstrates UI automation using Playwright Test.  
-It includes:
+🚀 Features
+Cross‑browser execution (Chromium, Firefox, WebKit)
 
-- UI tests (page load, selectors, assertions)
-- API + UI integration tests
-- Page Object Model (POM) structure
-- Playwright Test Runner UI support
-- Trace viewer and screenshot capture
+Page Object Model (POM) structure
 
-## 🧪 Running Tests
+Reusable fixtures & selectors
 
-Run all tests:
-Playwright Demo — UI Automation Project
-This project demonstrates modern UI automation using Playwright Test.
-It includes cross‑browser testing, trace capture, screenshots, and CI/CD integration with Jenkins.
+API + UI integration tests
 
-## 🚀 Features
-- Playwright Test Runner
-- Chromium, Firefox, WebKit support
-- Page Object Model (POM) structure
-- HTML reports + JUnit XML
-- Trace viewer + screenshot capture
-- Jenkins pipeline automation
+HTML reports + JUnit XML
 
-## 📁 Project Structure
+Trace viewer, screenshots, and video capture
+
+Jenkins pipeline support
+
+Configurable test environments
+
+📁 Project Structure
 Code
 playwright-demo/
 │
-├── tests/
-│   ├── home.spec.ts
-│   └── ...
+├── e2e/                 # End‑to‑end test suites
+├── fixtures/            # Reusable test fixtures (auth, context, API clients)
+├── pages/               # Page Object Model classes
+├── tests/               # UI + API integration tests
 │
-├── playwright.config.ts
+├── playwright-html/     # Playwright HTML report output
+├── static/              # Report assets
+│
+├── playwright.config.ts # Global Playwright configuration
+├── Jenkinsfile          # CI pipeline
 ├── package.json
-├── Jenkinsfile
-└── test-results/
-
-## 🧪 Running Tests Locally
+└── README.md
+🧪 Running Tests Locally
 Install dependencies:
 
 Code
 npm ci
-Install browsers:
+Install Playwright browsers:
 
 Code
 npx playwright install
-Run tests:
+Run the full test suite:
 
 Code
 npx playwright test
-View HTML report:
+Run in UI mode:
+
+Code
+npx playwright test --ui
+View the HTML report:
 
 Code
 npx playwright show-report
-
-## 🔧 Jenkins Pipeline
-The Jenkinsfile performs:
+🔧 Jenkins Pipeline Overview
+The included Jenkinsfile performs:
 
 SCM checkout
 
-Install Node.js (Node20 tool)
+Node.js setup (Node20)
 
-Install dependencies (npm ci)
+Dependency installation (npm ci)
 
-Install Playwright browsers
+Playwright browser installation
 
-Run tests
+Test execution
 
-Archive:
+Archiving artifacts:
 
 playwright-report/**
 
 test-results/*.xml
+
+This pipeline is optimized for parallel execution and CI‑friendly reporting.
+
+🧱 Design Principles
+Modularity: POM + fixtures keep tests clean and maintainable
+
+Reusability: Shared utilities for selectors, API clients, and environment config
+
+Traceability: Every failure includes trace, screenshot, and logs
+
+CI‑Ready: Zero‑config Jenkins integration
+
+Scalability: Supports parallel runs and multi‑browser execution
+
+📌 Tech Stack
+Playwright Test (TypeScript)
+
+Node.js
+
+Jenkins
+
+HTML Reporter / JUnit XML
+
+📄 Future Enhancements
+Add API‑only test suite
+
+Add environment‑based config switching
+
+Add GitHub Actions workflow
+
+Add test data factory utilities
