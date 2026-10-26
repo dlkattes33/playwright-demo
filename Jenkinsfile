@@ -8,7 +8,7 @@ pipeline {
       steps { sh 'npm ci' }
     }
     stage('Install Playwright Browsers') {
-      steps { sh 'npx playwright install --with-deps chromium firefox' }
+      steps { sh 'npx playwright install chromium firefox' }
     }
     stage('Run Playwright Tests') {
       steps { sh 'npx playwright test' }
